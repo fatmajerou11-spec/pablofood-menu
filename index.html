@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Food | Pizza & Street Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">
+        <img src="images/logo.png" alt="Pablo Food Logo">
+        <span>PABLO FOOD</span>
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#story">La nostra storia</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contatti</a>
+    </nav>
+
+    <a class="whatsapp-button" href="tel:+393522247555">
+         Chiama direttamente
+    </a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">AUTENTICA PIZZA ITALIANA</p>
+        <h1>Il gusto<br>che ti conquista.</h1>
+        <p>Ingredienti selezionati, passione e sapori autentici.</p>
+        <a href="#menu" class="main-button">SCOPRI IL MENU</a>
+    </div>
+</section>
+
+<section class="story" id="story">
+    <div class="story-image">
+        <img src="images/pablo.png" alt="Pablo Food">
+    </div>
+    <div class="story-content">
+        <p class="eyebrow">LA NOSTRA PASSIONE</p>
+        <h2>Benvenuti da Pablo Food</h2>
+        <p>
+            La passione per la cucina incontra ingredienti selezionati
+            e sapori autentici. Scopri le nostre pizze e le nostre
+            specialità preparate con cura.
+        </p>
+        <a href="#menu" class="text-link">Scopri le nostre specialità →</a>
+    </div>
+</section>
+
+<section class="menu-section" id="menu">
+    <div class="section-heading">
+        <p class="eyebrow">SAPORI AUTENTICI</p>
+        <h2>Il nostro menu</h2>
+        <p>Scegli la tua specialità preferita.</p>
+    </div>
+
+    <div class="category-links">
+        <button class="category-button active" data-category="all">Tutti</button>
+        <button class="category-button" data-category="pizza">Pizza</button>
+        <button class="category-button" data-category="street">BURGER & MAKLOUB</button>
+        <button class="category-button" data-category="tacos">French Tacos</button>
+        <button class="category-button" data-category="drinks">Bevande</button>
+    </div>
+
+    <div class="menu-grid">
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Marinara">
+            <div class="menu-info">
+                <h3>Marinara</h3>
+                <p>Pomodoro, aglio, origano, olio d’oliva.</p>
+                <strong>6 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Margherita">
+            <div class="menu-info">
+                <h3>Margherita</h3>
+                <p>Pomodoro, fiordilatte, basilico, olio extravergine d’oliva.</p>
+                <strong>7 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Napoli">
+            <div class="menu-info">
+                <h3>Napoli</h3>
+                <p>Pomodoro, fiordilatte, acciughe, capperi, olive nere, origano, basilico.</p>
+                <strong>8 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Capricciosa">
+            <div class="menu-info">
+                <h3>Capricciosa</h3>
+                <p>Pomodoro, fiordilatte, prosciutto cotto, salame, funghi, carciofi, basilico.</p>
+                <strong>9 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Pepper Pig">
+            <div class="menu-info">
+                <h3>Pepper Pig</h3>
+                <p>Fiordilatte, wurstel, patatine, basilico.</p>
+                <strong>8 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Quattro Formaggi">
+            <div class="menu-info">
+                <h3>4 Formaggi</h3>
+                <p>Fiordilatte, formaggi misti, gorgonzola, basilico.</p>
+                <strong>10 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Carrettiera">
+            <div class="menu-info">
+                <h3>Pizza Carrettiera</h3>
+                <p>Provola affumicata, friarielli, salsiccia.</p>
+                <strong>10,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Zuccosa">
+            <div class="menu-info">
+                <h3>Zuccosa</h3>
+                <p>Provola, crema di zucca, speck, ’nduja, basilico.</p>
+                <strong>11 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Porchetta Mia">
+            <div class="menu-info">
+                <h3>Porchetta Mia</h3>
+                <p>Provola, porchetta riccia, patate fritte, basilico.</p>
+                <strong>12 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Tonno da Capospino">
+            <div class="menu-info">
+                <h3>Tonno da Capospino</h3>
+                <p>Fiordilatte, tonno, cipolla caramellata, olive, basilico.</p>
+                <strong>10,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Diavola">
+            <div class="menu-info">
+                <h3>Diavola</h3>
+                <p>Pomodoro, fiordilatte, spianata piccante, olive, basilico.</p>
+                <strong>8,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Italiana">
+            <div class="menu-info">
+                <h3>Italiana</h3>
+                <p>Fiordilatte, pomodorini rossi, prosciutto crudo D.O.C., rucola, Parmigiano, limone.</p>
+                <strong>13 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Pablo">
+            <div class="menu-info">
+                <h3>Pizza Pablo</h3>
+                <p>Crema di peperone, pollo alla griglia, rucola, stracciatella di bufala.</p>
+                <strong>12 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza Sette Nani">
+            <div class="menu-info">
+                <h3>Pizza Sette Nani</h3>
+                <p>Crema di funghi porcini, provola, speck, rucola, Parmigiano, olive piccanti.</p>
+                <strong>12 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pizza">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Calzone">
+            <div class="menu-info">
+                <h3>Calzone</h3>
+                <p>Fiordilatte, salame Napoli, funghi, pomodoro, basilico.</p>
+                <strong>8 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="street">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Patatine fritte">
+            <div class="menu-info">
+                <h3>Patatine Fritte</h3>
+                <p>Patatine fritte croccanti.</p>
+                <strong>3 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="street">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Hamburger di manzo">
+            <div class="menu-info">
+                <h3>Hamburger di Manzo (Halal)</h3>
+                <p>Crema di funghi porcini, stracciatella di burrata, rucola, salsa a scelta e patatine fritte.</p>
+                <strong>9 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="street">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=80" alt="Makloub petto di pollo">
+            <div class="menu-info">
+                <h3>Makloub Petto di Pollo</h3>
+                <p>Petto di pollo, insalata verde, cipolla caramellata, basilico, salsa a scelta e patatine.</p>
+                <strong>9 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="street">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=80" alt="Makloub cordon bleu">
+            <div class="menu-info">
+                <h3>Makloub Cordon Bleu</h3>
+                <p>Cordon bleu, insalata verde, cipolla caramellata, basilico, salsa a scelta e patatine.</p>
+                <strong>9 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="street">
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=80" alt="Makloub tonno">
+            <div class="menu-info">
+                <h3>Makloub Tonno</h3>
+                <p>Tonno, insalata verde, cipolla caramellata, olive, basilico, salsa a scelta e patatine.</p>
+                <strong>9 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="tacos">
+            <img src="https://images.openai.com/static-rsc-4/SOrkiV5nfjEl1laR1AjfptxNSvElAyU5lmBgEJdyiKZuZW1kXrceg9sm3msLifKrOoEirb-otE-7KXoOrU4cAGKTFtqkLwhIEYPHc_b7Ph7KIbWOzq5o4e2mvGyonWqI2j9Fb7RiYAlmrP4e6_T6V0MMDA6Yq9vExdyFODH7H-vdrKHvlbmqJjuPlPdND_X1?purpose=fullsize" alt="Tacos manzo">
+            <div class="menu-info">
+                <h3>Tacos Manzo</h3>
+                <p>Manzo, patatine, salsa al formaggio, una salsa a scelta e patatine fritte a parte.</p>
+                <strong>9,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="tacos">
+            <img src="https://images.openai.com/static-rsc-4/SOrkiV5nfjEl1laR1AjfptxNSvElAyU5lmBgEJdyiKZuZW1kXrceg9sm3msLifKrOoEirb-otE-7KXoOrU4cAGKTFtqkLwhIEYPHc_b7Ph7KIbWOzq5o4e2mvGyonWqI2j9Fb7RiYAlmrP4e6_T6V0MMDA6Yq9vExdyFODH7H-vdrKHvlbmqJjuPlPdND_X1?purpose=fullsize" alt="Tacos pollo">
+            <div class="menu-info">
+                <h3>Tacos Pollo</h3>
+                <p>Pollo, patatine, salsa al formaggio, una salsa a scelta e patatine fritte a parte.</p>
+                <strong>9 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="tacos">
+            <img src="https://images.openai.com/static-rsc-4/SOrkiV5nfjEl1laR1AjfptxNSvElAyU5lmBgEJdyiKZuZW1kXrceg9sm3msLifKrOoEirb-otE-7KXoOrU4cAGKTFtqkLwhIEYPHc_b7Ph7KIbWOzq5o4e2mvGyonWqI2j9Fb7RiYAlmrP4e6_T6V0MMDA6Yq9vExdyFODH7H-vdrKHvlbmqJjuPlPdND_X1?purpose=fullsize" alt="Tacos mix">
+            <div class="menu-info">
+                <h3>Tacos Mix</h3>
+                <p>Manzo e pollo, patatine, salsa al formaggio, una salsa a scelta e patatine fritte a parte.</p>
+                <strong>10 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://www.shutterstock.com/image-photo/poznan-pol-apr-02-2025-260nw-2609600067.jpg" alt="Coca-Cola">
+            <div class="menu-info">
+                <h3>Coca-Cola 33cl</h3>
+                <p>Bevanda fresca.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://www.shutterstock.com/image-photo/poznan-pol-apr-02-2025-260nw-2609600067.jpg" alt="Coca-Cola Zero">
+            <div class="menu-info">
+                <h3>Coca-Cola Zero 33cl</h3>
+                <p>Bevanda fresca senza zuccheri.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://www.shutterstock.com/image-photo/poznan-pol-apr-02-2025-260nw-2609600067.jpg" alt="Fanta">
+            <div class="menu-info">
+                <h3>Fanta 33cl</h3>
+                <p>Bevanda all’arancia.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://www.shutterstock.com/image-photo/poznan-pol-apr-02-2025-260nw-2609600067.jpg" alt="Sprite">
+            <div class="menu-info">
+                <h3>Sprite 33cl</h3>
+                <p>Bevanda fresca al limone.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80" alt="Tè al limone">
+            <div class="menu-info">
+                <h3>Tè al Limone 33cl</h3>
+                <p>Tè freddo al limone.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9g8yd41YY4I5pnytiIEZ5mGdazAqauKvAXEnJ0x0p9Zvivx13WFx2Efk&s=10" alt="Tè alla pesca">
+            <div class="menu-info">
+                <h3>Tè alla Pesca 33cl</h3>
+                <p>Tè freddo alla pesca.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://www.sanpellegrino.com/be/sites/g/files/xknfdk2281/files/2025-06/limonata-can-33-cl-main-image.jpg" alt="Limonata">
+            <div class="menu-info">
+                <h3>Limonata 33cl</h3>
+                <p>Bevanda fresca al limone.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgE4BbNA5WfgXN4xOjokdgdG9FLiX171Z3sdmnNSfRfw&s=10" alt="Chinotto">
+            <div class="menu-info">
+                <h3>Chinotto 33cl</h3>
+                <p>Bevanda italiana.</p>
+                <strong>2 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhdwVN9B1Rsu7iURSkZw6kZxQVMP66nNz5DuKZmWTcw&s=10" alt="Energy drink">
+            <div class="menu-info">
+                <h3>Energy Drink 25cl</h3>
+                <p>Bevanda energetica.</p>
+                <strong>3 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44u3KbwkunHO-KpYmyMQnGpRKPZ_LcEpEv-iAGP-eC4q85pO_k8RpaXrn&s=10" alt="Acqua naturale">
+            <div class="menu-info">
+                <h3>Acqua Naturale 50cl</h3>
+                <p>Acqua naturale.</p>
+                <strong>1,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44u3KbwkunHO-KpYmyMQnGpRKPZ_LcEpEv-iAGP-eC4q85pO_k8RpaXrn&s=10" alt="Acqua frizzante">
+            <div class="menu-info">
+                <h3>Acqua Frizzante 50cl</h3>
+                <p>Acqua frizzante.</p>
+                <strong>1,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44u3KbwkunHO-KpYmyMQnGpRKPZ_LcEpEv-iAGP-eC4q85pO_k8RpaXrn&s=10" alt="Acqua naturale 1 litro">
+            <div class="menu-info">
+                <h3>Acqua Naturale 1L</h3>
+                <p>Acqua naturale.</p>
+                <strong>2,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44u3KbwkunHO-KpYmyMQnGpRKPZ_LcEpEv-iAGP-eC4q85pO_k8RpaXrn&s=10" alt="Acqua frizzante 1 litro">
+            <div class="menu-info">
+                <h3>Acqua Frizzante 1L</h3>
+                <p>Acqua frizzante.</p>
+                <strong>2,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Moretti">
+            <div class="menu-info">
+                <h3>Birra Moretti 33cl</h3>
+                <p>Birra.</p>
+                <strong>3 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Peroni">
+            <div class="menu-info">
+                <h3>Birra Peroni 33cl</h3>
+                <p>Birra.</p>
+                <strong>3 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Heineken">
+            <div class="menu-info">
+                <h3>Birra Heineken 33cl</h3>
+                <p>Birra.</p>
+                <strong>3,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Ichnusa">
+            <div class="menu-info">
+                <h3>Birra Ichnusa 33cl</h3>
+                <p>Birra.</p>
+                <strong>3,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Beck's">
+            <div class="menu-info">
+                <h3>Birra Beck’s 33cl</h3>
+                <p>Birra.</p>
+                <strong>3,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Corona Extra">
+            <div class="menu-info">
+                <h3>Corona Extra 33cl</h3>
+                <p>Birra.</p>
+                <strong>3,50 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Ceres">
+            <div class="menu-info">
+                <h3>Birra Ceres 33cl</h3>
+                <p>Birra.</p>
+                <strong>4 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Tennent's">
+            <div class="menu-info">
+                <h3>Tennent’s 33cl</h3>
+                <p>Birra.</p>
+                <strong>4 €</strong>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=700&q=80" alt="Birra Messina">
+            <div class="menu-info">
+                <h3>Birra Messina 33cl</h3>
+                <p>Birra.</p>
+                <strong>3,50 €</strong>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="section-heading">
+        <p class="eyebrow">VIENI A TROVARCI</p>
+        <h2>Contatti</h2>
+    </div>
+
+    <div class="contact-grid">
+        <a href="https://www.google.com/maps/search/?api=1&query=Via+Primo+Savani+8%2C+Parma%2C+Italia" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <img src="images/location.png" alt="Posizione">
+            <h3>Indirizzo</h3>
+            <p>Via Primo Savani, 8<br>Parma, Italia</p>
+        </a>
+
+        <a href="https://wa.me/393522247555" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <img src="images/whatsapp.png" alt="WhatsApp">
+            <h3>Telefono / WhatsApp</h3>
+            <p>+39 352 224 7555</p>
+        </a>
+
+        <a href="https://www.instagram.com/PABLO__FOOD/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <img src="images/instagram.png" alt="Instagram">
+            <h3>Instagram</h3>
+            <p>@PABLO__FOOD</p>
+        </a>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>PABLO FOOD — Pizza, passione e qualità.</p>
+    <p>© <span id="year"></span> Pablo Food. Tutti i diritti riservati.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
